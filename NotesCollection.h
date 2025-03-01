@@ -18,6 +18,7 @@ public:
     string getNameCollection();
     bool searchNote(const string &title);
     void printNotes();
+    int countNotes();
 
 
     void subscribe(Observer * o) override;

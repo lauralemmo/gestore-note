@@ -82,3 +82,7 @@ void NotesCollection::notify() {
         (*it)->update();
     }
 }
+
+int NotesCollection::countNotes() {
+    return collection.size();
+}
