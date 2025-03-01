@@ -41,9 +41,11 @@ void NotesCollection::setNameCollection(const string &name) {
     nameCollection = name;
 }
 
+
 string NotesCollection::getNameCollection() {
     return nameCollection;
 }
+
 
 bool NotesCollection::searchNote(const string &title) {
     for(auto it = collection.begin(); it != collection.end(); it++){
@@ -57,19 +59,23 @@ bool NotesCollection::searchNote(const string &title) {
     return false;
 }
 
+
 void NotesCollection::printNotes() {
     for(auto it = collection.begin(); it != collection.end(); it++){
         cout << it->getTitle() << it->getText();
     }
 }
 
+
 void NotesCollection::subscribe(Observer *o) {
     observers.push_back(o);
 }
 
+
 void NotesCollection::unsubscribe(Observer *o) {
     observers.remove(o);
 }
+
 
 void NotesCollection::notify() {
     for(auto it = observers.begin(); it != observers.end(); it++) {

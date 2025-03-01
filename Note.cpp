@@ -53,3 +53,11 @@ bool Note::isInCollection() const {
 void Note::setInCollection(bool inCollection) {
     Note::inCollection = inCollection;
 }
+
+bool Note::isInImportantCollection() const {
+    return inImportantCollection;
+}
+
+void Note::setInImportantCollection(bool inImportantCollection) {
+    Note::inImportantCollection = inImportantCollection;
+}

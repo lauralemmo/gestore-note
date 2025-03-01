@@ -26,6 +26,9 @@ public:
     bool isInCollection() const;
     void setInCollection(bool inCollection);
 
+    bool isInImportantCollection() const;
+    void setInImportantCollection(bool inImportantCollection);
+
 
 private:
     string title;
@@ -33,6 +36,7 @@ private:
     bool blocked = false;
     bool important = false;
     bool inCollection = false;
+    bool inImportantCollection = false;
 };
 
 
