@@ -38,7 +38,7 @@ int main() {
     cout << "Note nella " << collection1.getNameCollection() << ": " << collection1.countNotes() << endl;
 
     collection2.searchNote("title2");  //non funziona perchè nota non presente
-    collection2.searchNote("note4");
+    collection2.searchNote("title4");
 
     collection2.printNotes();
 

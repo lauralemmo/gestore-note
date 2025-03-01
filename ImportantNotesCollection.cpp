@@ -18,10 +18,10 @@ void ImportantNotesCollection::addNote(Note &note) {
             notify();
         }
         else
-            cout << "Nota già presente in una collezione importante" << endl;
+            cout << "Nota già presente in una collezione importante, impossibile aggiungerla" << endl;
     }
     else
-        cout << "Nota non importante" << endl;
+        cout << "Nota non importante, impossibile aggiungerla" << endl;
 }
 
 

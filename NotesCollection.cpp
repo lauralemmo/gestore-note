@@ -12,7 +12,7 @@ void NotesCollection::addNote(Note &note) {
         notify();
     }
     else
-        cout << "Nota già presente in una collezione" << endl;
+        cout << "Nota già presente in una collezione, impossibile aggiungerla" << endl;
 }
 
 
@@ -62,7 +62,7 @@ bool NotesCollection::searchNote(const string &title) {
 
 void NotesCollection::printNotes() {
     for(auto it = collection.begin(); it != collection.end(); it++){
-        cout << it->getTitle() << it->getText() << endl;
+        cout << it->getTitle() << ", " << it->getText() << endl;
     }
 }
 
