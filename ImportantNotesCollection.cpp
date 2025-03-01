@@ -18,10 +18,10 @@ void ImportantNotesCollection::addNote(Note &note) {
             notify();
         }
         else
-            cout << "Nota già presente in una collezione importante";
+            cout << "Nota già presente in una collezione importante" << endl;
     }
     else
-        cout << "Nota non importante";
+        cout << "Nota non importante" << endl;
 }
 
 
@@ -30,17 +30,17 @@ bool ImportantNotesCollection::removeNote(const string &title) {
         if((*it).getTitle() == title){
             if((*it).isBlocked() == false){
                 collection.erase(it);
-                cout << "Nota importante eliminata";
+                cout << "Nota importante eliminata" << endl;
                 (*it).setInImportantCollection(false);
                 notify();
                 return true;
             }
             else{
-                cout << "Nota importante bloccata, impossibile eliminarla";
+                cout << "Nota importante bloccata, impossibile eliminarla" << endl;
                 return false;
             }
         }
     }
-    cout << "Nota importante non trovata";
+    cout << "Nota importante non trovata" << endl;
     return false;
 }

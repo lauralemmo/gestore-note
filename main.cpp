@@ -29,13 +29,13 @@ int main() {
     collection1.addNote(note6);
     importantCollection1.addNote(note2);
     importantCollection1.addNote(note3);  //non funziona perchè non importante
-    cout << "Note nella " << collection1.getNameCollection() << ": " << collection1.countNotes();
-    cout << "Note nella " << collection2.getNameCollection() << ": " << collection2.countNotes();
-    cout << "Note nella " << importantCollection1.getNameCollection() << ": " << importantCollection1.countNotes();
+    cout << "Note nella " << collection1.getNameCollection() << ": " << collection1.countNotes() << endl;
+    cout << "Note nella " << collection2.getNameCollection() << ": " << collection2.countNotes() << endl;
+    cout << "Note nella " << importantCollection1.getNameCollection() << ": " << importantCollection1.countNotes() << endl;
 
     collection1.removeNote("title1");  //non funziona perchè bloccata
     collection1.removeNote("title5");
-    cout << "Note nella " << collection1.getNameCollection() << ": " << collection1.countNotes();
+    cout << "Note nella " << collection1.getNameCollection() << ": " << collection1.countNotes() << endl;
 
     collection2.searchNote("title2");  //non funziona perchè nota non presente
     collection2.searchNote("note4");

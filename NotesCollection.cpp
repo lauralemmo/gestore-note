@@ -12,7 +12,7 @@ void NotesCollection::addNote(Note &note) {
         notify();
     }
     else
-        cout << "Nota già presente in una collezione";
+        cout << "Nota già presente in una collezione" << endl;
 }
 
 
@@ -21,18 +21,18 @@ bool NotesCollection::removeNote(const string &title) {
         if((*it).getTitle() == title){
             if((*it).isBlocked() == false){
                 collection.erase(it);
-                cout << "Nota eliminata";
+                cout << "Nota eliminata" << endl;
                 (*it).setInCollection(false);
                 notify();
                 return true;
             }
             else{
-                cout << "Nota bloccata, impossibile eliminarla";
+                cout << "Nota bloccata, impossibile eliminarla" << endl;
                 return false;
             }
         }
     }
-    cout << "Nota non trovata";
+    cout << "Nota non trovata" << endl;
     return false;
 }
 
@@ -50,19 +50,19 @@ string NotesCollection::getNameCollection() {
 bool NotesCollection::searchNote(const string &title) {
     for(auto it = collection.begin(); it != collection.end(); it++){
         if((*it).getTitle() == title){
-            cout << "Titolo nota: " << it->getTitle();
-            cout << "Testo nota: " << it->getText();
+            cout << "Titolo nota: " << it->getTitle() << endl;
+            cout << "Testo nota: " << it->getText() << endl;
             return true;
         }
     }
-    cout << "Nota non trovata";
+    cout << "Nota non trovata" << endl;
     return false;
 }
 
 
 void NotesCollection::printNotes() {
     for(auto it = collection.begin(); it != collection.end(); it++){
-        cout << it->getTitle() << it->getText();
+        cout << it->getTitle() << it->getText() << endl;
     }
 }
 
