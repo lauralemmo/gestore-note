@@ -1,0 +1,26 @@
+# ninja log v5
+1	396	1740791631826119530	CMakeFiles/gestoreNoteLab.dir/Note.cpp.o	5277b681e8637675
+0	399	1740791631828873838	CMakeFiles/gestoreNoteLab.dir/main.cpp.o	200d47ba877f519c
+1	403	1740791631833430341	CMakeFiles/gestoreNoteLab.dir/User.cpp.o	49a183269559622e
+1	418	1740791631848453982	CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o	d64a0ebeb2c865ae
+1	426	1740791631856652952	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+426	564	1740791631996939154	gestoreNoteLab	86001ef5c6dd0336
+1	465	1740868380017931801	CMakeFiles/gestoreNoteLab.dir/main.cpp.o	200d47ba877f519c
+2	465	1740868380017931551	CMakeFiles/gestoreNoteLab.dir/User.cpp.o	49a183269559622e
+2	468	1740868380022770506	CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o	d64a0ebeb2c865ae
+2	486	1740868380040289464	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+486	622	1740868380178763509	gestoreNoteLab	86001ef5c6dd0336
+2	400	1740869733448943591	CMakeFiles/gestoreNoteLab.dir/main.cpp.o	200d47ba877f519c
+3	400	1740869733448402783	CMakeFiles/gestoreNoteLab.dir/Note.cpp.o	5277b681e8637675
+3	409	1740869733459642882	CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o	d64a0ebeb2c865ae
+3	426	1740869733476516258	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+426	466	1740869733518269803	gestoreNoteLab	86001ef5c6dd0336
+2	260	1740869836713867011	CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o	d64a0ebeb2c865ae
+2	279	1740869836732871621	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+279	312	1740869836767696490	gestoreNoteLab	86001ef5c6dd0336
+2	250	1740869891101552834	CMakeFiles/gestoreNoteLab.dir/main.cpp.o	200d47ba877f519c
+250	282	1740869891134522457	gestoreNoteLab	86001ef5c6dd0336
+2	273	1740869934965854784	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+273	306	1740869935001022304	gestoreNoteLab	86001ef5c6dd0336
+1	264	1740869949860109826	CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o	36de88e77a9c47a9
+264	296	1740869949893197860	gestoreNoteLab	86001ef5c6dd0336
