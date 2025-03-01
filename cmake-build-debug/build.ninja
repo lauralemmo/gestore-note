@@ -64,8 +64,14 @@ build CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o: CXX_COMPILER__gestore
   OBJECT_DIR = CMakeFiles/gestoreNoteLab.dir
   OBJECT_FILE_DIR = CMakeFiles/gestoreNoteLab.dir
 
-build CMakeFiles/gestoreNoteLab.dir/NotesImportantCollection.cpp.o: CXX_COMPILER__gestoreNoteLab_Debug /Users/lauralemmo/CLionProjects/gestoreNoteLab/NotesImportantCollection.cpp || cmake_object_order_depends_target_gestoreNoteLab
-  DEP_FILE = CMakeFiles/gestoreNoteLab.dir/NotesImportantCollection.cpp.o.d
+build CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o: CXX_COMPILER__gestoreNoteLab_Debug /Users/lauralemmo/CLionProjects/gestoreNoteLab/ImportantNotesCollection.cpp || cmake_object_order_depends_target_gestoreNoteLab
+  DEP_FILE = CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/gestoreNoteLab.dir
+  OBJECT_FILE_DIR = CMakeFiles/gestoreNoteLab.dir
+
+build CMakeFiles/gestoreNoteLab.dir/User.cpp.o: CXX_COMPILER__gestoreNoteLab_Debug /Users/lauralemmo/CLionProjects/gestoreNoteLab/User.cpp || cmake_object_order_depends_target_gestoreNoteLab
+  DEP_FILE = CMakeFiles/gestoreNoteLab.dir/User.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
   OBJECT_DIR = CMakeFiles/gestoreNoteLab.dir
   OBJECT_FILE_DIR = CMakeFiles/gestoreNoteLab.dir
@@ -78,7 +84,7 @@ build CMakeFiles/gestoreNoteLab.dir/NotesImportantCollection.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable gestoreNoteLab
 
-build gestoreNoteLab: CXX_EXECUTABLE_LINKER__gestoreNoteLab_Debug CMakeFiles/gestoreNoteLab.dir/main.cpp.o CMakeFiles/gestoreNoteLab.dir/Note.cpp.o CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o CMakeFiles/gestoreNoteLab.dir/NotesImportantCollection.cpp.o
+build gestoreNoteLab: CXX_EXECUTABLE_LINKER__gestoreNoteLab_Debug CMakeFiles/gestoreNoteLab.dir/main.cpp.o CMakeFiles/gestoreNoteLab.dir/Note.cpp.o CMakeFiles/gestoreNoteLab.dir/NotesCollection.cpp.o CMakeFiles/gestoreNoteLab.dir/ImportantNotesCollection.cpp.o CMakeFiles/gestoreNoteLab.dir/User.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/gestoreNoteLab.dir
   POST_BUILD = :

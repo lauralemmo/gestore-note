@@ -9,8 +9,8 @@ public:
     explicit ImportantNotesCollection(const string &nameImportantCollection);
     ~ImportantNotesCollection() override;
 
-    void addNote(Note &note) override;
-    bool removeNote(string &title) override;
+    virtual void addNote(Note &note) override;
+    virtual bool removeNote(string &title) override;
 };
 
 

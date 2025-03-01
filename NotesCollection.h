@@ -9,7 +9,7 @@
 class NotesCollection : public Subject{
 public:
     explicit NotesCollection(const string &nameCollection);
-    virtual ~NotesCollection();
+    ~NotesCollection() override;
 
     virtual void addNote(Note &note);
     virtual bool removeNote(string &title);
@@ -21,9 +21,9 @@ public:
     int countNotes();
 
 
-    void subscribe(Observer * o) override;
-    void unsubscribe(Observer * o) override;
-    void notify() override;
+    virtual void subscribe(Observer * o) override;
+    virtual void unsubscribe(Observer * o) override;
+    virtual void notify() override;
 
 protected:
     list<Note> collection;
