@@ -10,7 +10,7 @@ public:
     ~ImportantNotesCollection() override;
 
     virtual void addNote(Note &note) override;
-    virtual bool removeNote(string &title) override;
+    virtual bool removeNote(const string &title) override;
 };
 
 

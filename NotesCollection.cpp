@@ -16,7 +16,7 @@ void NotesCollection::addNote(Note &note) {
 }
 
 
-bool NotesCollection::removeNote(string &title) {
+bool NotesCollection::removeNote(const string &title) {
     for(auto it = collection.begin(); it != collection.end(); it++){
         if((*it).getTitle() == title){
             if((*it).isBlocked() == false){
@@ -67,6 +67,11 @@ void NotesCollection::printNotes() {
 }
 
 
+int NotesCollection::countNotes() {
+    return collection.size();
+}
+
+
 void NotesCollection::subscribe(Observer *o) {
     observers.push_back(o);
 }
@@ -81,8 +86,4 @@ void NotesCollection::notify() {
     for(auto it = observers.begin(); it != observers.end(); it++) {
         (*it)->update();
     }
-}
-
-int NotesCollection::countNotes() {
-    return collection.size();
 }

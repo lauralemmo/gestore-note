@@ -25,7 +25,7 @@ void ImportantNotesCollection::addNote(Note &note) {
 }
 
 
-bool ImportantNotesCollection::removeNote(string &title) {
+bool ImportantNotesCollection::removeNote(const string &title) {
     for(auto it = collection.begin(); it != collection.end(); it++){
         if((*it).getTitle() == title){
             if((*it).isBlocked() == false){

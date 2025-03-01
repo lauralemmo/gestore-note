@@ -12,7 +12,7 @@ public:
     ~NotesCollection() override;
 
     virtual void addNote(Note &note);
-    virtual bool removeNote(string &title);
+    virtual bool removeNote(const string &title);
 
     void setNameCollection(const string &name);
     string getNameCollection();
