@@ -1,4 +1,12 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/lauralemmo/CLionProjects/gestoreNoteLab -B /Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_subdirectory):
+  The source directory
+
+    /Users/lauralemmo/CLionProjects/gestoreNoteLab/test
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/CMakeError.log".

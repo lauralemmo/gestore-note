@@ -1,3 +1,6 @@
 /Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/gestoreNoteLab.dir
+/Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/core.dir
 /Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/lauralemmo/CLionProjects/gestoreNoteLab/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir

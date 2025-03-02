@@ -13,7 +13,7 @@ User::~User() {
 
 
 void User::update() {
-    cout << "Note nella collezione " << subject->getNameCollection() << ": " << subject->countNotes();
+    cout << "Note nella collezione " << subject->getNameCollection() << ": " << subject->countNotes() << endl;
 }
 
 void User::attach() {
