@@ -44,6 +44,7 @@ int main() {
 
     collection2->searchNote("title2");  //non funziona perchè nota non presente
     collection2->searchNote("title4");
+    importantCollection1->searchNote("title2");
 
     collection2->printNotes();
 
