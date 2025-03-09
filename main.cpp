@@ -26,25 +26,27 @@ int main() {
 
 
     collection1->addNote(note1);
-    collection1->addNote(note2);
+    collection1->addNote(note4);
     collection2->addNote(note1);  //non funziona perchè è già in un'altra collezione
-    collection2->addNote(note3);
-    collection2->addNote(note4);
-    collection1->addNote(note5);
-    collection1->addNote(note6);
-    importantCollection1->addNote(note2);
+    collection2->addNote(note5);
+    collection2->addNote(note6);
+    collection1->addNote(note3);
+    importantCollection1->addNote(note2);  //non funziona perchè non è presente in nessuna collezione
     importantCollection1->addNote(note3);  //non funziona perchè non importante
+    collection1->addNote(note2);
+    importantCollection1->addNote(note2);
     cout << "Note nella " << collection1->getNameCollection() << ": " << collection1->countNotes() << endl;
     cout << "Note nella " << collection2->getNameCollection() << ": " << collection2->countNotes() << endl;
     cout << "Note nella " << importantCollection1->getNameCollection() << ": " << importantCollection1->countNotes() << endl;
 
     collection1->removeNote("title1");  //non funziona perchè bloccata
-    collection1->removeNote("title5");
+    collection1->removeNote("title4");
     cout << "Note nella " << collection1->getNameCollection() << ": " << collection1->countNotes() << endl;
 
-    collection2->searchNote("title2");  //non funziona perchè nota non presente
-    collection2->searchNote("title4");
-    importantCollection1->searchNote("title2");
+    collection1->modifyNote(note3, "new title3");
+
+    collection2->searchNotes("5");
+    importantCollection1->searchNotes("2");
 
     collection2->printNotes();
 

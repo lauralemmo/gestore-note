@@ -13,10 +13,11 @@ public:
 
     virtual void addNote(Note &note);
     virtual bool removeNote(const string &title);
+    void modifyNote(Note &note, const string &text);
 
     void setNameCollection(const string &name);
     string getNameCollection();
-    bool searchNote(const string &title);
+    list<Note> searchNotes(const string &word);
     void printNotes();
     int countNotes();
 

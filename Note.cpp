@@ -1,7 +1,7 @@
 
 #include "Note.h"
 
-Note::Note(string title, string text) : title(title), text(text) {}
+Note::Note(const string &title, const string &text) : title(title), text(text) {}
 
 Note::~Note() {}
 
@@ -10,8 +10,10 @@ const string &Note::getTitle() const {
 }
 
 void Note::setTitle(const string &title) {
-    if(!blocked)
+    if(!blocked) {
         Note::title = title;
+        cout << "Titolo modificato con successo" << endl;
+    }
     else
         cout << "Errore: Impossibile modificare il titolo" << endl;
 }
@@ -21,8 +23,10 @@ const string &Note::getText() const {
 }
 
 void Note::setText(const string &text) {
-    if(!blocked)
+    if(!blocked){
         Note::text = text;
+        cout << "Testo modificato con successo" << endl;
+    }
     else
         cout << "Errore: Impossibile modificare il testo" << endl;
 }
@@ -52,12 +56,4 @@ bool Note::isInCollection() const {
 
 void Note::setInCollection(bool inCollection) {
     Note::inCollection = inCollection;
-}
-
-bool Note::isInImportantCollection() const {
-    return inImportantCollection;
-}
-
-void Note::setInImportantCollection(bool inImportantCollection) {
-    Note::inImportantCollection = inImportantCollection;
 }

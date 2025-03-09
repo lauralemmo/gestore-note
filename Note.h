@@ -8,7 +8,7 @@ using namespace std;
 
 class Note {
 public:
-    Note(string title, string text);
+    Note(const string &title, const string &text);
     virtual ~Note();
 
     const string &getTitle() const;
@@ -26,9 +26,6 @@ public:
     bool isInCollection() const;
     void setInCollection(bool inCollection);
 
-    bool isInImportantCollection() const;
-    void setInImportantCollection(bool inImportantCollection);
-
 
 private:
     string title;
@@ -36,7 +33,6 @@ private:
     bool blocked = false;
     bool important = false;
     bool inCollection = false;
-    bool inImportantCollection = false;
 };
 
 

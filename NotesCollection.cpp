@@ -36,6 +36,10 @@ bool NotesCollection::removeNote(const string &title) {
     return false;
 }
 
+void NotesCollection::modifyNote(Note &note, const string &text) {
+    note.setText(text);
+}
+
 
 void NotesCollection::setNameCollection(const string &name) {
     nameCollection = name;
@@ -47,20 +51,21 @@ string NotesCollection::getNameCollection() {
 }
 
 
-bool NotesCollection::searchNote(const string &title) {
+list<Note> NotesCollection::searchNotes(const string &word) {
+    list<Note> notesWithWord;
+    cout << "Lista delle note contenenti '" << word << "' :" << endl;
     for(auto it = collection.begin(); it != collection.end(); it++){
-        if((*it).getTitle() == title){
-            cout << "Titolo nota: " << it->getTitle() << endl;
-            cout << "Testo nota: " << it->getText() << endl;
-            return true;
+        if((*it).getTitle().find(word) != string::npos || (*it).getText().find(word) != string::npos){
+            cout << it->getTitle() << ", " << it->getText() << endl;
+            notesWithWord.push_back(*it);
         }
     }
-    cout << "Nota non trovata" << endl;
-    return false;
+    return notesWithWord;
 }
 
 
 void NotesCollection::printNotes() {
+    cout << "Lista delle note contenute nella collezione: " << endl;
     for(auto it = collection.begin(); it != collection.end(); it++){
         cout << it->getTitle() << ", " << it->getText() << endl;
     }
@@ -87,3 +92,5 @@ void NotesCollection::notify() {
         (*it)->update();
     }
 }
+
+
