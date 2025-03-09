@@ -20,6 +20,8 @@ TEST(ImportantNotesCollection, addNote){
     importantNotesCollection.addNote(note);
     ASSERT_EQ(0, importantNotesCollection.countNotes());
     note.setImportant(true);
+    NotesCollection notesCollection("name collection");
+    notesCollection.addNote(note);
     importantNotesCollection.addNote(note);
     ASSERT_EQ(1, importantNotesCollection.countNotes());
 }
@@ -31,12 +33,15 @@ TEST(ImportantNotesCollection, removeNote){
     ImportantNotesCollection importantNotesCollection(nameCollection);
     Note note(title, text);
     note.setImportant(true);
+    NotesCollection notesCollection("name collection");
+    notesCollection.addNote(note);
     importantNotesCollection.addNote(note);
     importantNotesCollection.removeNote(title);
     ASSERT_EQ(0, importantNotesCollection.countNotes());
     Note note2("title2", "text2");
     note2.setImportant(true);
     note2.setBlocked(true);
+    notesCollection.addNote(note2);
     importantNotesCollection.addNote(note2);
     importantNotesCollection.removeNote("title2");
     ASSERT_EQ(1, importantNotesCollection.countNotes());

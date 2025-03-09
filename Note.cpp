@@ -12,7 +12,7 @@ const string &Note::getTitle() const {
 void Note::setTitle(const string &title) {
     if(!blocked) {
         Note::title = title;
-        cout << "Titolo modificato con successo" << endl;
+        cout << "Titolo modificato con successo: " ;
     }
     else
         cout << "Errore: Impossibile modificare il titolo" << endl;
@@ -25,7 +25,7 @@ const string &Note::getText() const {
 void Note::setText(const string &text) {
     if(!blocked){
         Note::text = text;
-        cout << "Testo modificato con successo" << endl;
+        cout << "Testo modificato con successo: " ;
     }
     else
         cout << "Errore: Impossibile modificare il testo" << endl;

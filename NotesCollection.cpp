@@ -38,6 +38,7 @@ bool NotesCollection::removeNote(const string &title) {
 
 void NotesCollection::modifyNote(Note &note, const string &text) {
     note.setText(text);
+    cout << note.getText() << endl;
 }
 
 
@@ -51,13 +52,13 @@ string NotesCollection::getNameCollection() {
 }
 
 
-list<Note> NotesCollection::searchNotes(const string &word) {
-    list<Note> notesWithWord;
+NotesCollection NotesCollection::searchNotes(const string &word) {
+    NotesCollection notesWithWord("name collection");
     cout << "Lista delle note contenenti '" << word << "' :" << endl;
     for(auto it = collection.begin(); it != collection.end(); it++){
-        if((*it).getTitle().find(word) != string::npos || (*it).getText().find(word) != string::npos){
+        if((*it).getTitle().find(word) != string::npos && (*it).getText().find(word) != string::npos){
             cout << it->getTitle() << ", " << it->getText() << endl;
-            notesWithWord.push_back(*it);
+            notesWithWord.addNote(*it);
         }
     }
     return notesWithWord;

@@ -17,7 +17,7 @@ public:
 
     void setNameCollection(const string &name);
     string getNameCollection();
-    list<Note> searchNotes(const string &word);
+    NotesCollection searchNotes(const string &word);
     void printNotes();
     int countNotes();
 

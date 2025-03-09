@@ -40,20 +40,21 @@ TEST(NotesCollection, removeNote){
     notesCollection.addNote(note2);
     notesCollection.removeNote("title2");
     ASSERT_EQ(1, notesCollection.countNotes());
+    notesCollection.removeNote("title3");
+    ASSERT_EQ(1, notesCollection.countNotes());
 }
 
-TEST(NotesCollection, searchNote){
+TEST(NotesCollection, searchNotes){
     NotesCollection notesCollection("name");
-    Note note1("title1", "text1");
-    Note note2("title2", "text2");
-    Note note3("title3", "text3");
+    Note note1("title1 prova", "text1 prova");
+    Note note2("title2", "text2 prova");
+    Note note3("title3 prova", "text3 prova");
     notesCollection.addNote(note1);
     notesCollection.addNote(note2);
     notesCollection.addNote(note3);
-    bool a = notesCollection.searchNote("title1");
-    ASSERT_TRUE(a);
-    bool b = notesCollection.searchNote("title4");
-    ASSERT_FALSE(b);
+    NotesCollection finalList("final list");
+    finalList = notesCollection.searchNotes("prova");
+    ASSERT_EQ(2, finalList.countNotes());
 }
 
 TEST(NotesCollection, countNotes){
