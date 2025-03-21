@@ -10,17 +10,22 @@ ImportantNotesCollection::ImportantNotesCollection(const string &nameImportantCo
 ImportantNotesCollection::~ImportantNotesCollection() {}
 
 
-void ImportantNotesCollection::addNote(Note &note) {
+bool ImportantNotesCollection::addNote(Note &note) {
     if(note.isImportant() == true){
         if(note.isInCollection() == true){
             collection.push_back(note);
             notify();
+            return true;
         }
-        else
+        else{
             cout << "Nota non presente in una collezione, impossibile aggiungerla fra quelle importanti" << endl;
+            return false;
+        }
     }
-    else
+    else{
         cout << "Nota non importante, impossibile aggiungerla" << endl;
+        return false;
+    }
 }
 
 

@@ -11,7 +11,7 @@ public:
     explicit NotesCollection(const string &nameCollection);
     ~NotesCollection() override;
 
-    virtual void addNote(Note &note);
+    virtual bool addNote(Note &note);
     virtual bool removeNote(const string &title);
     void modifyNote(Note &note, const string &text);
 

@@ -5,14 +5,17 @@ NotesCollection::NotesCollection(const string &nameCollection) : nameCollection(
 NotesCollection::~NotesCollection() {}
 
 
-void NotesCollection::addNote(Note &note) {
+bool NotesCollection::addNote(Note &note) {
     if(note.isInCollection() == false){
         collection.push_back(note);
         note.setInCollection(true);
         notify();
+        return true;
     }
-    else
+    else{
         cout << "Nota già presente in una collezione, impossibile aggiungerla" << endl;
+        return false;
+    }
 }
 
 
